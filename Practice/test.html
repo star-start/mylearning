@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--网页标题-->
+        <title>爬虫练习html</title>
+        <style>
+            /*class的符号为 .*/
+            .test {  /*表示为class为test的元素设置内容*/
+                width: 90px;
+                height: 90px;
+                background-color: cyan;
+            }
+            /*id的符号为 #*/
+            #test_text {
+                color: mediumorchid;
+            }
+        </style>
+    </head>
+    <body>  <!--body就是网页显示的主题内容-->
+        <h1>这个是大标题</h1>
+        <h2>这个是大标题</h2>
+        <h3>这个是大标题</h3>
+        <h4>这个是大标题</h4>
+        <p>body 元素会显示在网页中</p>  <!--p元素是一个段落-->
+        <p>title 元素的内容则是网页的标题</p>
+        <a href="https://baidu.com">a标签可以放网页</a>  <!--a标签即是超链接，它的href属性可以存放网页-->
+        <!--src可以存放图片的路径-->
+        <img src="img.png">  <!--img是单标签-->
+        <!--可以使用本地图片，也可以使用网络的图片-->
+        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnimg.ws.126.net%2F%3Furl%3Dhttp%253A%252F%252Fdingyue.ws.126.net%252F2021%252F0911%252F91a75bc5j00qz9ecy001kd200ku00kug00ku00ku.jpg%26thumbnail%3D650x2147483647%26quality%3D80%26type%3Djpg&refer=http%3A%2F%2Fnimg.ws.126.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1644481564&t=dced1a429ce1e1ba15a87ddb99b44060">  <!--img是单标签-->
+        <!--无序列表-->
+        <ul>
+            <li>周杰伦<span>花海</span></li>
+            <li>光良<span>童话</span></li>
+            <li>任贤齐<span>沧海一声笑</span></li>
+        </ul>
+        <!--有序列表-->
+        <ol>
+            <li>有序标签的子元素</li>
+            <li>有序标签的子元素</li>
+            <li>有序标签的子元素</li>
+        </ol>
+        <!-- class属性表示某类设置，同一个类可以给多个标签同时使用 -->
+        <div class="test"></div>
+        <div class="test"></div>
+        <div class="test"></div>
+        <!-- id表示唯一地标识一个标签，同一个html文档只能使用一次 -->
+        <span id="test_text">哈哈哈，今天周四，快周末了！但是周末和我们没关系，哈哈哈！</span>
+
+        <div class="wrap">  <!--div表示盒子标签，它是空白的元素-->
+
+            <div id="container">
+                <!--<span id="container"></span>  注意！id是不能重复的-->
+                <ul class="list">
+                    <li class="item-0">first item</li>
+                    <li class="item-1"><a href="link2.html">second item</a></li>
+                    <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+                    <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+                    <li class="item-0"><a href="link4.html">fifth item</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--class表示类，一个页面可以有很多个标签是同一个类-->
+        <!--id表示标识标签的唯一一个属性-->
+        <span class="text">放文本</span>
+        <div class="text" id="div_text">盒子元素</div>
+        <div class="block"></div>
+        <div class="block text">这个div含有两个类</div>  <!--这一行的div的class属性拥有两个类-->
+    </body>
+</html>
