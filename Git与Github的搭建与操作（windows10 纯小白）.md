@@ -8,7 +8,9 @@
 
 直接下载最新版就好了，我下载的就是windows 64 位的。
 
-<img src="C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213090012422.png" alt="image-20221213090012422" style="zoom:33%;" />
+<img src="assets/image-20221213090012422.png" alt="image-20221213090012422" style="zoom:33%;" />
+
+
 
 #### 3.Git操作
 
@@ -19,7 +21,7 @@
 > - 我新建了一个在F盘的MyGit/learningcode
 > - 进入该目录，pwd 查看自己当前目录
 
-![image-20221213090437496](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213090437496.png)
+![image-20221213090437496](assets/image-20221213090437496.png)
 
 ##### 3.2 初始化 
 
@@ -29,7 +31,7 @@
 >
 > 发现.git的隐藏文件，说明已经初始化成功了
 
-![image-20221213091348219](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213091348219.png)
+![image-20221213091348219](assets/image-20221213091348219.png)
 
 ##### 3.3 设置签名
 
@@ -55,7 +57,7 @@
 
 > `git status`
 
-![image-20221213092800637](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213092800637.png)
+![image-20221213092800637](assets/image-20221213092800637.png)
 
 查看工作区、暂存区状态
 
@@ -63,7 +65,7 @@
 
 > 1.随便放两个文件夹进去目录，你也可以先直接vim随便创建一个文件
 >
-> ![image-20221213093132972](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213093132972.png)
+> ![image-20221213093132972](assets/image-20221213093132972.png)
 >
 > 2.使用 `git status ` 查看状态
 >
@@ -73,35 +75,35 @@
 
 > 1.写入 SSH keys 的值
 >
->  SSH and GPG keys ->New SSH key 
+> SSH and GPG keys ->New SSH key 
 >
-> <img src="C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213094633354.png" alt="image-20221213094633354" style="zoom: 33%;" />
+> <img src="assets/image-20221213094633354.png" alt="image-20221213094633354" style="zoom: 33%;" />
 >
-> ![image-20221213094952848](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213094952848.png)
+> ![image-20221213094952848](assets/image-20221213094952848.png)
 >
 > 2,复制安装git时候的公钥（如果没有找到.ssh文件，可以看一下3.7，创建一个，再继续从这里往下走）
 >
-> ![image-20221213095155470](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213095155470.png)
+> ![image-20221213095155470](assets/image-20221213095155470.png)
 >
 > 按照文件路径找到.ssh文件夹，找到.pub后缀的文件，用记事本打开，把内容全部复制粘贴到刚刚在 github 打开的SSH keys/Add new 的key位置，点击 Add SSH key就好了。
 >
-> ![image-20221213095411696](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213095411696.png)
+> ![image-20221213095411696](assets/image-20221213095411696.png)
 >
 > 3.Emails不能设置成private，即：Keep my email adress private 把前面的那个给勾掉。
 >
-> ![image-20221213095853961](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213095853961.png)
+> ![image-20221213095853961](assets/image-20221213095853961.png)
 >
 > 4.创建远程仓库
 >
-> ![image-20221213100607098](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213100607098.png)
+> ![image-20221213100607098](assets/image-20221213100607098.png)
 >
 > 进去以后，按下那个new
 >
-> ![image-20221213100655277](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213100655277.png)
+> ![image-20221213100655277](assets/image-20221213100655277.png)
 >
 > 随便取一个名字就好啦
 >
-> ![image-20221213100520429](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213100520429.png)
+> ![image-20221213100520429](assets/image-20221213100520429.png)
 >
 > 5.本地跟远程仓库的连接
 >
@@ -111,7 +113,7 @@
 >
 > `git remote add origin 你的GitHub创建的仓库的地址`
 >
-> ![image-20221213101025178](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213101025178.png)
+> ![image-20221213101025178](assets/image-20221213101025178.png)
 >
 > 6.把本地的仓库master分支push到远程仓库里面
 >
@@ -133,12 +135,12 @@
 
 >1.git log
 >
->![image-20221213102959661](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213102959661.png)
+>![image-20221213102959661](assets/image-20221213102959661.png)
 >
 >2.git log --pretty=oneline
 >
->![image-20221213103030008](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213103030008.png)
+>![image-20221213103030008](assets/image-20221213103030008.png)
 >
 >3.git reflog 
 >
->![image-20221213103047611](C:\Users\22122\AppData\Roaming\Typora\typora-user-images\image-20221213103047611.png)
+>![image-20221213103047611](assets/image-20221213103047611.png)
